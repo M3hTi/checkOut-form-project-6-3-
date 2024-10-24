@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>checkout(project 6 - 3)</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Hands-on Project 6-3</h1>
+        </header>
+
+        <main>
+            <form class="checkout-form" novalidate>
+                <div class="form-sections">
+                    <section class="shipping-section">
+                        <h2 class="section-title">Shipping Address</h2>
+                        
+                        <div class="form-group">
+                            <label>First Name<span class="required-field">*</span></label>
+                            <input type="text" name="shipping_first_name" class="js-fname" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Last Name<span class="required-field">*</span></label>
+                            <input type="text" name="shipping_last_name" class="js-lname" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Address Line 1<span class="required-field">*</span></label>
+                            <input type="text" name="shipping_address1" class="js-address" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Address Line 2</label>
+                            <input type="text" name="shipping_address2">
+                        </div>
+
+                        <div class="form-group">
+                            <label>City<span class="required-field">*</span></label>
+                            <input type="text" name="shipping_city" class="js-city" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>State<span class="required-field">*</span></label>
+                            <select name="shipping_state" class="js-lists" required>
+                                <option value="">Choose Your state</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Country<span class="required-field">*</span></label>
+                            <input type="text" name="shipping_country" class="js-country"  required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Postal Code<span class="required-field">*</span></label>
+                            <input type="text" name="shipping_postal" class="js-postal" pattern="^\d{5}(-\d{4})?$" required>
+                        </div>
+                    </section>
+
+                    <section class="billing-section">
+                        <h2 class="section-title">Billing Address</h2>
+                        
+                        <div class="checkbox-group">
+                            <label>
+                                <input type="checkbox" name="same_as_shipping">
+                                Same as Shipping Address
+                            </label>
+                        </div>
+
+                        <div class="form-group">
+                            <label>First Name<span class="required-field">*</span></label>
+                            <input type="text" name="billing_first_name" class="js-fname" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Last Name<span class="required-field">*</span></label>
+                            <input type="text" name="billing_last_name" class="js-lname" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Address Line 1<span class="required-field">*</span></label>
+                            <input type="text" name="billing_address1" class="js-address" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Address Line 2</label>
+                            <input type="text" name="billing_address2">
+                        </div>
+
+                        <div class="form-group">
+                            <label>City<span class="required-field">*</span></label>
+                            <input type="text" name="billing_city" class="js-city" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>State<span class="required-field">*</span></label>
+                            <select name="billing_state" class="js-lists" required>
+                                <option value="">Choose Your state</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Country<span class="required-field">*</span></label>
+                            <input type="text" name="billing_country" class="js-country" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Postal Code<span class="required-field">*</span></label>
+                            <input type="text" name="billing_postal" class="js-postal" pattern="^\d{5}(-\d{4})?$" required>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="error-box">
+                   
+                </div>
+
+                <button type="submit" class="next-button">Next</button>
+            </form>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

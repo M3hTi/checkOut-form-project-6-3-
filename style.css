@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #0077cc;
+    color: white;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.checkout-form {
+    background-color: #ffdb8c;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.form-sections {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.shipping-section,
+.billing-section {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.section-title {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.required-field {
+    color: red;
+    margin-left: 3px;
+}
+
+input[type="text"],
+select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.checkbox-group {
+    margin: 15px 0;
+}
+
+.error-box {
+    background-color: #fff;
+    border: 1px solid #ff6b6b;
+    padding: 10px;
+    margin-bottom: 15px;
+    color: #ff6b6b;
+    display: none;
+}
+
+.next-button {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    display: block;
+    margin: 0 auto;
+}
+
+.next-button:hover {
+    background-color: #e0e0e0;
+}
